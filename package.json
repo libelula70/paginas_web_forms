@@ -1,0 +1,23 @@
+{
+  "name": "paginas_web_forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libelula70/paginas_web_forms.git"
+  },
+  "keywords": [],
+  "author": "Ana Belén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libelula70/paginas_web_forms/issues"
+  },
+  "homepage": "https://github.com/libelula70/paginas_web_forms#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
