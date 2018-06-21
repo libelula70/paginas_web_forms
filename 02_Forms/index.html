@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formularios</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
 </head>
 <body>
     <header>
@@ -24,8 +26,13 @@
             </div>
             <div class="control-group">
                     <label for="pais">País</label>
-                    <input type="text"  name="pais" id="pais"
-                     value="ES" maxlength="2">
+                    <input type="text"  name="pais" id="pais" maxlength="2" list="paises-list">
+                     <datalist id="paises-list">
+                        <option>ES</option>
+                        <option>UK</option>
+                        <option>FR</option>
+                        <option>US</option>
+                     </datalist>
                 </div>
                 <div class="control-group">
                         <label for="password">Password</label>
@@ -51,14 +58,68 @@
                 <label for="search">Buscar</label>
                 <input type="search" name="search" id="search">
             </div>
+            <div class="control-group">
+                    <label for="cv">Subir curriculum</label>
+                    <input type="file" name="Seleccionar archivo" id="cv">
+                </div>
         </fieldset>
         <fieldset>
                 <legend>Información extra</legend>
+                <div class="textarea-group"> 
                 <textarea name="info" id="info" cols="30" rows="10"></textarea>
+            </div>
+</fieldset>
+<fieldset>
+    <div class="check-group">
+    <label for="accepted">Leídas y aceptadas las condiciones</label>
+    <input type="checkbox" name="accepted" id="accepted">
+</div>
+<div class="check-group">
+        <label for="coockies">Acepto coockies</label>
+        <input type="checkbox" name="coockies" id="coockies">
+    </div>
 </fieldset>
 
-        <button>Enviar</button>
+<fieldset>
+<legend>Curso</legend>
+<select name="curso" id="curso" size="8">
+   <optgroup label="Programación">
+        <option value="Web">Páginas web</option>
+        <option value="PHP">Programación PHP</option>
+        <option value="Java">Desarrollo en Java</option>
+    </optgroup>
+    <optgroup label="Sistemas">
+        <option value="sisweb">Servidores web</option>
+        <option value="win">Servidores Windows</option>
+        <option value="lin">Servidores Linux</option>
+    </optgroup>
+</select>
+</fieldset>
+<fieldset>
+<legend>Turno</legend>
+<input type="radio" name="turno" id="manana" value="mañana">
+<label for="manana">Mañana</label>
+<input type="radio" name="turno" id="tarde" value="tarde">
+<label for="tarde">Tarde</label>
 
+</fieldset>
+<fieldset>
+    <legend>Curiosidades</legend>
+    <label for="color">Dime tu color</label>
+    <input type="color" name="color" id="color">
+    <label for="copias">Copias</label>
+    <input type="range" name="copias" id="copias" min="1" max="5" step="1" value="1">
+</fieldset>
+<fieldset>
+    <input type="button" onclick="saludar()" value="Saludar">
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+    <button type="submit" title="Enviar">
+       <i class="fas fa-share-square"></i></button>
+    <button type="reset" title="Borrar">
+            <i class="fas fa-eraser"></i></button>
+    <button type="button" onclick="saludar()">Saludar</button>
+    </fieldset>
     </form>
 </body>
 </html>
