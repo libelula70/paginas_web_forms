@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estilos en los formularios</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="control-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required autofocus>
+            </div>
+            <div class="control-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellidos">
+                </div>
+        </fieldset>
+       
+        <fieldset>
+            <div class="check-group">
+            <input type="checkbox" name="accepted" id="accepted" required>
+            <label for="accepted">Leídas y aceptadas las condiciones</label>
+            
+        </div>
+        <div class="check-group">
+            <input type="checkbox" name="coockies" id="coockies">    
+            <label for="coockies">Acepto coockies</label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <button type="submit" title="Enviar">
+            <i class="fas fa-share-square"></i></button>
+        <button type="reset" title="Borrar">
+            <i class="fas fa-eraser"></i></button>  
+        </fieldset>
+
+        
+
+    </form>
+</body>
+</html>

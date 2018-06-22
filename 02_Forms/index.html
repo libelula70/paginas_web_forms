@@ -72,7 +72,7 @@
 <fieldset>
     <div class="check-group">
     <label for="accepted">Leídas y aceptadas las condiciones</label>
-    <input type="checkbox" name="accepted" id="accepted">
+    <input type="checkbox" name="accepted" id="accepted" required>
 </div>
 <div class="check-group">
         <label for="coockies">Acepto coockies</label>
@@ -82,7 +82,7 @@
 
 <fieldset>
 <legend>Curso</legend>
-<select name="curso" id="curso" size="8">
+<select name="curso" id="curso" size="8" required>
    <optgroup label="Programación">
         <option value="Web">Páginas web</option>
         <option value="PHP">Programación PHP</option>
@@ -97,7 +97,7 @@
 </fieldset>
 <fieldset>
 <legend>Turno</legend>
-<input type="radio" name="turno" id="manana" value="mañana">
+<input type="radio" name="turno" id="manana" value="mañana" required>
 <label for="manana">Mañana</label>
 <input type="radio" name="turno" id="tarde" value="tarde">
 <label for="tarde">Tarde</label>

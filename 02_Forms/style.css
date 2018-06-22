@@ -28,3 +28,13 @@ body {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 }
+
+textarea {
+    width: 20rem;
+    height: 10rem;
+}
+
+*:required {
+    border: 1px solid red;
+    color: crimson;
+}

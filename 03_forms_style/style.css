@@ -1,0 +1,33 @@
+body {
+    margin: 2rem;
+
+}
+
+.control-group {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+input[type="checkbox"]:checked {
+    width: 6rem;
+    background-color: aqua;
+    border: 1px solid gray;
+}
+
+input[type="text"]:required {
+    border: 1px solid gray;
+    color:darkblue;
+}
+
+*:focus {
+    background-color: aquamarine;
+}
+
+*:required + label::after {
+    content: "*";
+    font-size: 1.5rem;
+    color: red;
+}
