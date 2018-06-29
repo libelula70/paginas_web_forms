@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(0,0,0,.1);
+	font: 1.1rem sans-serif;
+	text-transform: uppercase;
+    color: white;
+}
+
+.item{
+    padding: 1.5rem;
+    margin: 1rem 0;
+	border-radius: .3rem;
+    background-color: #E92763;
+    min-height: 10vh;
+}
+
+.flex-wrapper {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+}
+
+nav, main, aside {
+    flex: 1 1 auto;
+}
+
+nav, aside {
+    flex: 1 1 20%;
+}
+
+main {
+    flex: 1 1 60%;
+}
