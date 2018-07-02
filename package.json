@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parallelshell \"npm run server \" \"npm run pug\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug -w -P ./06_pug/pug -o ./06_pug/html",
+    "server": "http-server"
+
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,9 @@
   "homepage": "https://github.com/libelula70/paginas_web_forms#readme",
   "dependencies": {
     "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
