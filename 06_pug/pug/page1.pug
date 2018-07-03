@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        h1 Pug Avanzado
+
+        //Lógica mediante JS
+        //-let nombre="Pepe"
+        - let nombre='María'
+        -if (nombre === 'Pepe') {
+            p Hola otra vez, Pepe
+        -} else {
+            p Hola #{nombre}, ¿Donde está Pepe?
+        -}
+
+        //Lógica navita (build-in) Pug
+
+        // Condicional IF
+
+        //- nombre="Pepe"
+        - nombre="Marta"
+        if (nombre ==='Pepe')
+            p Hola otra vez Pepe
+        else
+            p Hola #{nombre}, ¿donde está Pepe?
+
+    // Condicional case
+
+    //- name = "Pepe" 
+    //- name = "Alicia" 
+    - name = "Juan" 
+    case name 
+        when "Pepe" 
+            p Hola Pepe, ¿como estás? 
+        when "Alicia" 
+            p Que tal, Alicia 
+        default 
+            p Hola #{name}! 
+
+    // Iteraciones each
+
+    - let aSecciones = ['Inicio', 'Porfolio', 'Clientes', 'About'] 
+        nav 
+            ul 
+            each seccion in aSecciones 
+                li: a(href="#"+seccion.toLowerCase())= seccion 
+
+    -let opciones= [{nombre:'C#', codigo:'37'}, {nombre:'Java', codigo:'84'}, {nombre:'JavaScript', codigo:'1'}]
+    -let opName= 'cursos'
+    form(action="")
+        label(for="opName") Selecciona un curso
+        select(name="opName" id="opName")
+            each opcion in opciones
+                option(value= opcion.codigo)= opcion.nombre
+        button(type="submit") Enviar
+                
+            
+
+            

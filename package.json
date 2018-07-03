@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parallelshell \"npm run server \" \"npm run pug\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pug": "pug -w -P ./06_pug/pug -o ./06_pug/html",
+    "pug": "pug -w -P -O ./06_pug/config.json ./06_pug/pug -o ./06_pug/html",
     "server": "http-server"
 
   },

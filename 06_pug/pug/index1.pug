@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang= idioma)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title= titulo
+    body
+        // Añadiendo contenido
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae eum ullam necessitatibus et, animi eaque dicta quas sequi ab, accusantium sunt corporis magni ad aspernatur quis repellendus id aut omnis!
+
+        //Elementos inline
+        h1 Ejemplos de i #{metaLenguaje.toUpperCase()}
+
+        p Pug es un <b>lenguaje de plantillas </b>basado en JS
+        p Pug es un <b>lenguaje de plantillas</b> basado en JS
+        
+        //Atributos
+        
+        div(id="div1", class="principal")
+
+        //ATAJOS: Atributos
+    
+        #div2.principal
+    
+        //Bloques de expansión
+        nav
+            ul
+                - let url = "#"+menuItems[0].toLowerCase() 
+                li: a(href=url) #{menuItems[0]}
+                -url= '../html/page1.html'
+                li: a(href=url) #{menuItems[1]} 
+                li: a(href="#"+menuItems[2].toLowerCase()) #{menuItems [2]}
+        
+        //Variables con HTML
+        -let html = "<p>Esto es un párrafo</p>"
+        div= html
