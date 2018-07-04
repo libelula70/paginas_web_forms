@@ -1,0 +1,30 @@
+{
+  "name": "Proyecto_Pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parallelshell \"npm run server \" \"npm run pug\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug -w -P -O config.json ./src/pug -o ./dist",
+    "server": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libelula70/paginas_web_forms.git"
+  },
+  "keywords": [],
+  "author": "Ana Belén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libelula70/paginas_web_forms/issues"
+  },
+  "homepage": "https://github.com/libelula70/paginas_web_forms#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
