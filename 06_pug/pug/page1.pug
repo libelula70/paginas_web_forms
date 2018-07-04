@@ -58,6 +58,13 @@ html(lang="es")
                 option(value= opcion.codigo)= opcion.nombre
         button(type="submit") Enviar
                 
-            
+    //Iteraciones while
 
-            
+    -let aSections = ['Home', 'Porfolio', 'Clients', 'About'] 
+    nav 
+        ul 
+            -let i=0
+            while i < aSections.length
+                li: a(href="#"+aSections[i].toLowerCase())= aSections[i]
+                -i++
+        
