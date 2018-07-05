@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parallelshell \"npm run server \" \"npm run pug\" \"npm run sass:w\"",
+    "start": "parallelshell \"npm run server \" \"npm run pug\" \"npm run sass:watch\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug -w -P -O config.json ./src/pug -o ./dist",
     "server": "http-server",
     "sass": "sass src/sass:dist/css",
-    "sass:watch": "nodemon -e src/sass -x \"sass src/sass:dist/css\"",
+    "sass:watch": "nodemon -e scss -x \"sass src/sass:dist/css\"",
     "sass:w": "node-sass -watch src/sass -o dist/css"
   },
   "repository": {
