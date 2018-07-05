@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parallelshell \"npm run server \" \"npm run pug\"",
+    "start": "parallelshell \"npm run server \" \"npm run pug\" \"npm run sass:w\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug -w -P -O config.json ./src/pug -o ./dist",
-    "server": "http-server"
+    "server": "http-server",
+    "sass": "sass src/sass:dist/css",
+    "sass:watch": "nodemon -e src/sass -x \"sass src/sass:dist/css\"",
+    "sass:w": "node-sass -watch src/sass -o dist/css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
     "bootstrap": "^4.1.1"
   },
   "devDependencies": {
+    "node-sass": "^4.9.1",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }

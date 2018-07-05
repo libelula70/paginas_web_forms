@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=dist/css/style.css.map */
