@@ -1,17 +1,12 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 nav ul, footer ul {
-  list-style: none;
-}
+  list-style: none; }
+
 nav a, footer a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 body {
-  background-color: bisque;
-}
-
-/*# sourceMappingURL=dist/css/style.css.map */
+  background-color: bisque; }

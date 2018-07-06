@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug -w -P -O ./06_pug/config.json ./06_pug/pug -o ./06_pug/html",
     "server": "http-server"
-
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,9 @@
   },
   "homepage": "https://github.com/libelula70/paginas_web_forms#readme",
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
   },
   "devDependencies": {
     "pug": "^2.0.3",

@@ -1,0 +1,29 @@
+
+
+.borde {
+    border: 1px solid;
+    background-color: bisque
+}
+
+body {
+    color: rgb(60, 60, 60);
+}
+
+.header-wrapper, .footer-wrapper {
+    background-color: rgb(60, 60, 60);
+    color: rgb(238, 236, 235);
+}
+
+.footer-wrapper {
+    border-top: 1px solid grey;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid grey;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
